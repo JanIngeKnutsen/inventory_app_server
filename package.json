@@ -1,0 +1,21 @@
+{
+  "name": "inventory_app_server",
+  "version": "0.0.1",
+  "description": "REST API for inventory app",
+  "main": "server.js",
+  "author": "Jan Inge Knutsen",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  }
+}
