@@ -16,7 +16,7 @@ app.use("/api", api);
 app.use("/", express.static("./public"));
 
 mongoose.connect(
-  `mongodb+srv://${process.env.MDB_USER}:${process.env.MDB_PASSWORD}@cluster0.ivmrt.gcp.mongodb.net/${process.env.MDB_DATABASE}?retryWrites=true&w=majority`,
+  `mongodb+srv://${process.env.MDB_USER}:${process.env.MDB_PASSWORD}@${process.env.MDB_CLUSTER}.ivmrt.gcp.mongodb.net/${process.env.MDB_DATABASE}?retryWrites=true&w=majority`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
